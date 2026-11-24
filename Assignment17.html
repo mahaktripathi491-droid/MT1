@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17: Form Attributes and Input Validation</title>
+</head>
+<body>
+
+    <form action="submit.php" method="POST">
+        <!-- Full Name: Required text field -->
+        <input type="text" name="fullname" placeholder="Full name" required>
+        <br><br>
+
+        <!-- Email: Required email validation -->
+        <input type="email" name="email" placeholder="you@college.edu" required>
+        <br><br>
+
+        <!-- Mobile: Required 10-digit pattern with custom title message -->
+        <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+        <br><br>
+
+        <!-- Password: Required with minimum 6 characters -->
+        <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+        <br><br>
+
+        <!-- Age: Required number between 17 and 30 -->
+        <input type="number" name="age" placeholder="Age (17-30)" min="17" max="30" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
+<!--Mahak tropathi 2026b153100179-->
